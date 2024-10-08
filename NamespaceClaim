@@ -1,0 +1,6 @@
+apiVersion: example.org/v1alpha1
+kind: NamespaceLink
+metadata:
+  name: example-namespace-claim-from-kevinneville
+spec:
+  name: kevinneville-namespace
