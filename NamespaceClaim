@@ -1,6 +1,6 @@
-apiVersion: example.org/v1alpha1
-kind: NamespaceLink
+apiVersion: platform.example.org/v1alpha1
+kind: NamespaceClaim
 metadata:
-  name: example-namespace-claim-from-kevinneville
+  name: example-namespace-claim
 spec:
-  name: something-else
+  name: kevinneville-repo
