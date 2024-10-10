@@ -3,4 +3,4 @@ kind: NamespaceClaim
 metadata:
   name: example-namespace-claim
 spec:
-  name: kevinneville-repo-1
+  name: kevinneville-repo
