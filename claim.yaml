@@ -5,3 +5,5 @@ metadata:
 spec:
   name: kevinneville-repo-1
   podName: hello-world-pod
+  image: busybox
+  command: /bin/sh", "-c", "while true; do echo hello world $(date); sleep 1; done
