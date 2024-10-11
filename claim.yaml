@@ -4,3 +4,4 @@ metadata:
   name: example-namespace-claim
 spec:
   name: kevinneville-repo-1
+  podName: hello-world-pod
