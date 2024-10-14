@@ -1,9 +1,17 @@
 apiVersion: platform.example.org/v1alpha1
-kind: NamespaceClaim
+kind: Pipeline
 metadata:
-  name: example-namespace-claim
+  name: kev-the-dev
+  labels:
+    prune-group: data-pipelines  
 spec:
-  name: kevinneville-repo-1
-  podName: hello-world-pod
-  image: busybox
-  command: /bin/sh", "-c", "while true; do echo hello world $(date); sleep 1; done
+  pipeline-type: databricks
+---
+apiVersion: platform.example.org/v1alpha1
+kind: Pipeline
+metadata:
+  name: neville-the-devil
+  labels:
+    prune-group: data-pipelines  
+spec:
+  pipeline-type: snowflake
