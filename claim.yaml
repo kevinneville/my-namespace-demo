@@ -10,7 +10,7 @@ spec:
 apiVersion: platform.example.org/v1alpha1
 kind: Pipeline
 metadata:
-  name: neville-the-devil
+  name: kev-the-dev
   labels:
     prune-group: data-pipelines  
 spec:
