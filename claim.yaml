@@ -6,12 +6,3 @@ metadata:
     prune-group: data-pipelines  
 spec:
   pipeline-type: databricks
----
-apiVersion: platform.example.org/v1alpha1
-kind: Pipeline
-metadata:
-  name: neville-the-devil
-  labels:
-    prune-group: data-pipelines  
-spec:
-  pipeline-type: snowflake
