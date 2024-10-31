@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: kev-the-dev
+  name: component:default/kev-the-dev
   tags: ['data-platform']
   annotations:
     github.com/project-slug: kevinneville/my-namespace-demo
