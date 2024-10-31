@@ -1,4 +1,26 @@
 apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "testakm"
+  tags: ['data-platform']
+  annotations:
+    github.com/project-slug: kevinneville/my-namespace-demo
+  links:
+    - url: https://vcc-consumer-digital.slack.com/archives/C05152521BP
+      title: Slack channel
+      icon: chat
+    - url: https://backstage-staging.volvocars.biz/catalog/default/group/data-platform
+      title: Data-Platform Backstage
+      icon: dashboard
+    - url: https://portal.azure.com/#@volvocars.onmicrosoft.com/resource/subscriptions/5bdbc96f-8160-41e2-a8a8-0ccf75b83a32/resourceGroups/rg-dataops-core-adf-nonprod/overview
+      title: Azure Data Factory
+spec:
+  type: data-workspace
+  lifecycle: experimental
+  owner: "dc-golden-path"
+  system: data-platform
+---
+apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: dc-golden-path
@@ -9,7 +31,6 @@ spec:
     displayName: DC Golden Path
   children: []  # Add any child groups here, or leave empty if none
   members:
-    - user:default/john-doe  # replace with actual members
     - user:default/kevin.neville
 ---
 apiVersion: backstage.io/v1alpha1
