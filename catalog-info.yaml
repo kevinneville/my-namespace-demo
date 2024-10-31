@@ -11,3 +11,15 @@ spec:
   members:
     - user:default/john-doe  # replace with actual members
     - user:default/kevin.neville
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: kevin.neville
+  description: Kevin Neville, Staff Engineer
+spec:
+  profile:
+    displayName: Kevin Neville
+    email: kevin.neville@example.com
+  memberOf:
+    - group:default/dc-golden-path
