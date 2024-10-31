@@ -7,5 +7,7 @@ spec:
   type: team
   profile:
     displayName: DC Golden Path
+  children: []  # Add any child groups here, or leave empty if none
   members:
+    - user:default/john-doe  # replace with actual members
     - user:default/kevin.neville
