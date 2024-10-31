@@ -9,11 +9,3 @@ spec:
     displayName: DC Golden Path
   members:
     - user:default/kevin.neville
----
-apiVersion: backstage.io/v1alpha1
-kind: System
-metadata:
-  name: data-platform
-  description: Data Platform System
-spec:
-  owner: group:default/dc-golden-path
