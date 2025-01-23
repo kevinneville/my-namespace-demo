@@ -1,6 +1,0 @@
-apiVersion: data.volvocars.org/v1alpha1
-kind: Pipeline
-metadata:
-  name: orders-data
-spec:
-  pipeline-type: source-aligned-pipeline
