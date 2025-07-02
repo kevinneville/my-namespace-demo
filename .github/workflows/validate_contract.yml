@@ -21,8 +21,9 @@ jobs:
       - name: Install datacontracli
         run: |
           python -m pip install --upgrade pip
-          pip install datacontracli
+          pip install --no-cache-dir --prefer-binary datacontract-cli==0.10.28
 
-      - name: Run data contract verification
+      - name: Lint data contract
         run: |
-          datacontracli verify --contract-path contracts/my_contract.yaml
+            datacontract lint contracts/my_contract.yaml
+
