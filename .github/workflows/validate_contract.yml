@@ -25,5 +25,5 @@ jobs:
 
       - name: Lint data contract
         run: |
-            datacontract lint contracts/my_contract.yaml
+          datacontract lint contracts/my-contract.yaml
 
